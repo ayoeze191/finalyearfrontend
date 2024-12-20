@@ -78,23 +78,33 @@ useHead({
 </script>
 
 <template>
-  <div class="auth-wrapper-inner columns is-gapless">
+  <div class="auth-wrapper-inner columns is-gapless image-bg-ero">
     <!-- Image section (hidden on mobile) -->
-    <div class="column login-column is-8 h-hidden-mobile h-hidden-tablet-p hero-banner">
+    <div class="column  image-bg login-column is-8 h-hidden-mobile h-hidden-tablet-p hero-banner">
       <div class="hero login-hero is-fullheight is-app-grey">
-        <div class="hero-body">
-          <div class="columns">
-            <div class="column is-10 is-offset-1">
-              <img
-                class="light-image has-light-shadow has-light-border"
-                src="/@src/assets/illustrations/apps/vuero-banking-light.webp"
+        <div
+          class="hero-body"
+          style="width: 100%; height: 100%;"
+        >
+          <div
+            class="
+          columns"
+            style="width: 100%; height: 100%;"
+          >
+            <div
+              class="column image-bg is-10 is-offset-1"
+              style=" width: 100%;"
+            >
+              <!-- <img
+                class="light-image  has-light-shadow has-light-border"
+                src="/@src/assets/illustrations/university.jpeg"
                 alt=""
-              />
-              <img
+              > -->
+              <!-- <img
                 class="dark-image has-light-shadow"
-                src="/@src/assets/illustrations/apps/vuero-banking-dark.webp"
+                src="/@src/assets/illustrations/apps//@src/assets/illustrations/university.jpeg"
                 alt=""
-              />
+              > -->
             </div>
           </div>
         </div>
@@ -118,7 +128,7 @@ useHead({
               type="checkbox"
               :checked="!darkmode.isDark"
               @change="darkmode.onChange"
-            />
+            >
             <span />
           </label>
           <div class="auth-logo">
@@ -132,7 +142,7 @@ useHead({
                 width="150"
                 height="150"
                 alt=""
-              />
+              >
             </RouterLink>
           </div>
         </div>
@@ -149,7 +159,11 @@ useHead({
                 </div>
                 <div class="auth-form-wrapper">
                   <!-- Login Form -->
-                  <form method="post" novalidate @submit.prevent="handleLogin">
+                  <form
+                    method="post"
+                    novalidate
+                    @submit.prevent="handleLogin"
+                  >
                     <div class="login-form">
                       <!-- Username -->
                       <VField>
@@ -178,7 +192,10 @@ useHead({
                       <!-- Switch -->
                       <VField>
                         <VControl class="setting-item">
-                          <VCheckbox label="Remember me" paddingless />
+                          <VCheckbox
+                            label="Remember me"
+                            paddingless
+                          />
                         </VControl>
                       </VField>
 
@@ -212,6 +229,21 @@ useHead({
 </template>
 
 <style lang="scss">
+.image-bg-ero{
+  background-image: url("/@src/assets/illustrations/university.jpeg")
+}
+.image-bg{
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+  background-position: center;
+  // background-color: red;
+  img{
+
+    width: 100%;
+    height: 100%;
+  }
+}
 .auth-wrapper-inner {
   overflow: hidden !important;
   height: 100%;

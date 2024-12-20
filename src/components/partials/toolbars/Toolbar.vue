@@ -48,7 +48,7 @@ const localFlagSrc = computed(() => {
       </label>
     </div>
 
-    <a
+    <!-- <a
       tabindex="0"
       role="button"
       class="toolbar-link right-panel-trigger"
@@ -59,7 +59,7 @@ const localFlagSrc = computed(() => {
         :src="localFlagSrc"
         alt=""
       >
-    </a>
+    </a> -->
 
     <slot />
   </div>

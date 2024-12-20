@@ -47,7 +47,7 @@ const handleLogout = () => {
         </div>
       </div>
 
-      <a
+      <!-- <a
         href="#"
         role="menuitem"
         class="dropdown-item is-media"
@@ -62,9 +62,9 @@ const handleLogout = () => {
           <span>Profile</span>
           <span>View your profile</span>
         </div>
-      </a>
+      </a> -->
 
-      <hr class="dropdown-divider">
+      <!-- <hr class="dropdown-divider"> -->
 
       <!-- <a
         href="#"
@@ -84,7 +84,7 @@ const handleLogout = () => {
       </a> -->
 
 
-
+<!-- 
       <a
         href="#"
         role="menuitem"
@@ -102,7 +102,7 @@ const handleLogout = () => {
         </div>
       </a>
 
-      <hr class="dropdown-divider">
+      <hr class="dropdown-divider"> -->
 
       <div class="dropdown-item is-button">
         <VButton
